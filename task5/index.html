@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Store Products</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Store</h1>
+        <div class="cart-box">🛒 Cart: <span id="cartCount">0</span></div>
+    </header>
+
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+        </select>
+
+        <select id="sortPrice">
+            <option value="default">Sort by Price</option>
+            <option value="low">Low to High</option>
+            <option value="high">High to Low</option>
+        </select>
+    </div>
+
+    <p id="message">Loading...</p>
+
+    <div id="productContainer" class="product-container"></div>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <img id="modalImage" src="" alt="Product Image" />
+            <h2 id="modalTitle"></h2>
+            <p id="modalCategory"></p>
+            <h3 id="modalPrice"></h3>
+            <p id="modalRating"></p>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
